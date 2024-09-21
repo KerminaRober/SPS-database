@@ -1,0 +1,110 @@
+<!-- success.php -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Successful</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat');
+        
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html, body {
+            height: 100%;
+            font-family: Montserrat, Arial, Verdana;
+            background: #b3d3dd; /* Fallback for old browsers */
+            background: -webkit-linear-gradient(to left, #1582db, #073655); /* Chrome 10-25, Safari 5.1-6 */
+            color: #fff;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        /* Container styles */
+        .container {
+            background: rgba(0, 0, 0, 0.7); /* Slightly dark background for better contrast */
+            border-radius: 15px;
+            padding: 40px;
+            max-width: 600px;
+            width: 90%;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            font-size: 1.25rem;
+            margin-bottom: 20px;
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.25rem;
+            color: #fff;
+            background-color: #086a91;
+            border: none;
+            border-radius: 25px;
+            text-decoration: none;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        }
+        
+        .button:hover {
+            background-color: #2c3e50;
+        }
+        
+        /* Logos */
+        .logo {
+            position: absolute;
+            top: 20px;
+            width: 100px;
+        }
+        
+        .top-left-logo {
+            left: 20px;
+        }
+        
+        .top-right-logo {
+            right: 20px;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .button {
+                font-size: 1rem;
+                padding: 10px 20px;
+            }
+            
+            .logo {
+                width: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="path/to/your/top-left-logo.png" alt="Top Left Logo" class="logo top-left-logo">
+    <img src="path/to/your/top-right-logo.png" alt="Top Right Logo" class="logo top-right-logo">
+    
+    <div class="container">
+        <h1>Thank You!</h1>
+        <p>Your request has been submitted successfully.</p>
+        <p>Please wait for an email with your login credentials.</p>
+        <a href="index.php" class="button">Go to Home</a> <!-- Optional: Add a link to go back to the homepage -->
+    </div>
+</body>
+</html>
